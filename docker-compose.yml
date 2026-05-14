@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  mailslurper:
+    image: marcopas/docker-mailslurper
+    container_name: MailSlurper
+    ports:
+      - "2500:2500" # SMTP Port (Untuk mengirim email dari Java)
+      - "8080:8080" # Web UI (Untuk melihat inbox di browser)
+      - "8085:8085" # API Port
+    restart: unless-stopped

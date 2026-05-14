@@ -25,6 +25,7 @@ public class Booking extends JFrame {
         UserSession.setUserId(user_id);
         setTitle("SiParkir - Booking");
         setSize(1100, 750);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
@@ -313,7 +314,7 @@ public class Booking extends JFrame {
             }
 
             String createTableSQL = "CREATE TABLE IF NOT EXISTS Ticket (" +
-                    "id INTEGER PRIMARY KEY AUTOINCREMENT," +
+                    "ticket_id INTEGER PRIMARY KEY AUTOINCREMENT," +
                     "user_id INTEGER NOT NULL," +
                     "PersonName TEXT NOT NULL," +
                     "plateNumber TEXT NOT NULL," +

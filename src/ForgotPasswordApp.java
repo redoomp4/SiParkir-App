@@ -15,6 +15,7 @@ public class ForgotPasswordApp extends JFrame {
     public ForgotPasswordApp() {
         setTitle("Forgot Password");
         setSize(800, 500);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(null);

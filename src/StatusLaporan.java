@@ -18,6 +18,7 @@ public class StatusLaporan extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(900, 600);
         setLocationRelativeTo(null);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
         setLayout(new BorderLayout());
         // Sidebar
         JPanel sidebar = new JPanel();

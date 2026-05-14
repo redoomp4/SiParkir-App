@@ -26,6 +26,7 @@ public class Register extends JFrame {
     public Register() {
         setTitle("SIPARKIR");
         setSize(800, 500);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(null);
@@ -250,15 +251,15 @@ public class Register extends JFrame {
         try (Connection conn = DriverManager.getConnection("jdbc:sqlite:database/App.db")) {
             Statement pragmaStmt = conn.createStatement();
             pragmaStmt.execute("PRAGMA foreign_keys = ON;");
-            String createTableSQL = "CREATE TABLE IF NOT EXISTS user (" +
-                    "id INTEGER PRIMARY KEY AUTOINCREMENT," +
-                    "fullname TEXT NOT NULL," +
+            String createTableSQL = "CREATE TABLE IF NOT EXISTS User (" +
+                    "user_id INTEGER PRIMARY KEY AUTOINCREMENT," +
+                    "fullName TEXT NOT NULL," +
                     "email TEXT NOT NULL UNIQUE," +
                     "user_pw TEXT NOT NULL," +
                     "phoneNumber TEXT NOT NULL);";
             Statement stmt = conn.createStatement();
             stmt.execute(createTableSQL);
-            String sql = "INSERT INTO user (fullname, email, user_pw, phoneNumber) VALUES (?, ?, ?, ?)";
+            String sql = "INSERT INTO User (fullName, email, user_pw, phoneNumber) VALUES (?, ?, ?, ?)";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, name);
             pstmt.setString(2, email);

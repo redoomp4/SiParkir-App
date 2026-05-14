@@ -25,6 +25,7 @@ public class Login extends JFrame {
     public Login() {
         setTitle("SIPARKIR");
         setSize(800, 500);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(null);
