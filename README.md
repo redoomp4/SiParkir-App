@@ -41,8 +41,8 @@ Aplikasi ini sudah dilengkapi dengan script otomatis untuk mempermudah proses ko
 
 1. **Clone Repository ini**
    ```bash
-   git clone https://github.com/redoomp4/TUBES2025.git
-   cd TUBES2025
+   git clone https://github.com/redoomp4/SiParkir-App.git
+   cd SiParkir-App
    ```
 
 2. **Jalankan Aplikasi Utama (GUI)**
