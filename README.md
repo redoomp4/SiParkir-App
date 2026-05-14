@@ -41,8 +41,8 @@ Aplikasi ini sudah dilengkapi dengan script otomatis untuk mempermudah proses ko
 
 1. **Clone Repository ini**
    ```bash
-   git clone https://github.com/username-anda/SIPARKIR.git
-   cd SIPARKIR
+   git clone https://github.com/redoomp4/TUBES2025.git
+   cd TUBES2025
    ```
 
 2. **Jalankan Aplikasi Utama (GUI)**
@@ -57,7 +57,7 @@ Aplikasi ini sudah dilengkapi dengan script otomatis untuk mempermudah proses ko
    run_server.bat
    ```
 
-4. **Jalankan MailSlurper ( butuh Docker)**
+4. **Jalankan MailSlurper ( butuh Docker )**
    Jika Anda ingin melihat email yang dikirim oleh sistem saat fitur lupa password digunakan, jalankan *MailSlurper* menggunakan Docker Compose:
    ```cmd
    docker-compose up -d
@@ -89,4 +89,4 @@ Proyek ini dibuat untuk memenuhi tugas mata kuliah Pemrograman Berorientasi Obje
 - Mengelola dependensi eksternal (Library) tanpa menggunakan Build Tool (seperti Maven/Gradle) untuk pemahaman fundamental struktur direktori Java.
 
 ---
-*Dibuat dengan ❤️ untuk Tugas Besar PBO 2024/2025.*
+
